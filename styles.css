@@ -12,3 +12,48 @@ body {
   background-color: #f4f4f9;
   color: #333;
 }
+
+/* Grid Layout */
+.dashboard {
+  display: grid;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main-content";
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  grid-area: sidebar;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.sidebar .branding h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar .navigation ul {
+  list-style: none;
+}
+
+.sidebar .navigation ul li {
+  margin-bottom: 1rem;
+
+.sidebar .navigation ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.sidebar .navigation ul li a:hover {
+  color: #1abc9c;
+}
