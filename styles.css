@@ -67,3 +67,12 @@ body {
 .spacer {
   flex-grow: 1;
 }
+
+  .logout a {
+  color: #e74c3c;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
