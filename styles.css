@@ -164,14 +164,6 @@ body {
 }
 
 .projects {
-  grid-column: 1 / 2;
-}
-
-.announcements, .trending {
-  grid-column: 2 / 3;
-}
-
-.projects, .announcements, .trending {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -180,7 +172,7 @@ body {
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
@@ -189,6 +181,37 @@ body {
   padding: 1rem;
   text-align: center;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-links {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-links a {
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.project-links a:hover {
+  color: #0056b3;
+}
+
+.announcements, .trending {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.announcements {
+  margin-bottom: 2rem;
 }
 
 .announcements .announcement-list {
