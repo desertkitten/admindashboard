@@ -38,13 +38,6 @@ body {
   margin-bottom: 2rem;
 }
 
-.sidebar .branding .icon {
-  display: block;
-  margin: 0 auto 1rem auto;
-  width: 50px;
-  height: 50px;
-}
-
 .sidebar .navigation ul {
   list-style: none;
 }
@@ -57,23 +50,11 @@ body {
   color: #ecf0f1;
   text-decoration: none;
   font-size: 1.1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
   transition: color 0.2s;
 }
 
 .sidebar .navigation ul li a:hover {
   color: #1abc9c;
-}
-
-.menu-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.sidebar .bottom-menu {
-  margin-top: auto;
 }
 
 .header {
@@ -89,7 +70,7 @@ body {
 .header-left {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2rem; /* Space between search bar and large user section */
 }
 
 .search-bar input {
@@ -182,15 +163,19 @@ body {
   gap: 2rem;
 }
 
+.projects {
+  grid-column: 1 / 2;
+}
+
+.announcements, .trending {
+  grid-column: 2 / 3;
+}
+
 .projects, .announcements, .trending {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1rem;
-}
-
-.projects {
-  grid-column: 1 / -1;
 }
 
 .project-list {
@@ -234,4 +219,17 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+/* Icons */
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.menu-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
 }
