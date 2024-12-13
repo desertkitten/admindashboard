@@ -159,19 +159,21 @@ body {
   padding: 2rem;
   background-color: #f4f4f9;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   gap: 2rem;
 }
 
 .projects {
-  grid-column: 1 / 2;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.project-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  background: #fff;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .project-card {
@@ -184,14 +186,14 @@ body {
   justify-content: space-between;
 }
 
-.project-card .project-links {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
+.project-card a {
+  display: inline-block;
+  margin: 0.5rem 0;
+  text-decoration: none;
+  color: #333;
 }
 
 .announcements {
-  grid-column: 2 / 3;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -211,8 +213,6 @@ body {
 }
 
 .trending {
-  grid-column: 2 / 3;
-  margin-top: 2rem;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
